@@ -1,0 +1,13 @@
+newVector <- function(z = numeric()) {
+        n<- NULL
+        set <- function(y) {
+                z <<- y
+                n <<- NULL
+        }
+        get <- function() z
+        setmean <- function(mean) n <<- mean
+        getmean <- function() n
+        list(set = set, get = get,
+             setmean = setmean,
+             getmean = getmean)
+}
