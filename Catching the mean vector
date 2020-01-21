@@ -22,13 +22,13 @@ cachemean <- function(x, ...) {
         x$setmean(m)
         m
 }
-## A pair of functions that cache the inverse of a matrix
+## A pair of functions that cache the inverse of the matrix
 
 
 ## Creates a special matrix object that can cache its inverse
 makeCacheMatrix <- function( m = matrix() ) {
 
-	## Initialize the inverse property
+	## Initialize the inverse property of the matrix
     i <- NULL
 
     ## Method to set the matrix
