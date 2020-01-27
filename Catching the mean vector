@@ -23,8 +23,6 @@ cachemean <- function(x, ...) {
         m
 }
 ## A pair of functions that cache the inverse of the matrix
-
-
 ## Creates a special matrix object that can cache its inverse
 makeCacheMatrix <- function( m = matrix() ) {
 
@@ -84,6 +82,6 @@ cacheSolve <- function(x, ...) {
     ## Set the inverse to the object
     x$setInverse(m)
 
-    ## Return the new matrix
+    ## Returns the new matrix
     m
 }
